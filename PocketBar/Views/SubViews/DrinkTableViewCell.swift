@@ -13,11 +13,13 @@ class DrinkTableViewCell: UITableViewCell {
     // MARK: - Properties
     
     var drink: Drink? {
-        didSet { // maybe this belongs in viewWillLoad?
-            updateUI()
+        didSet {
+            guard let drink = drink else { return }
+            drinkNameLabel.text = drink.name
+            instructionsLabel.text = drink.instructions
         }
     }
-
+    
     // MARK: - Outlets
     
     @IBOutlet weak var drinkThumbnail: UIImageView!
@@ -27,10 +29,10 @@ class DrinkTableViewCell: UITableViewCell {
     
     
     
-    func updateUI() {
-        guard let drink = drink else { return }
-        drinkNameLabel.text = drink.name
-        instructionsLabel.text = drink.instructions
-    }
-
+    //    func updateUI() {
+    //        guard let drink = drink else { return }
+    //        drinkNameLabel.text = drink.name
+    //        instructionsLabel.text = drink.instructions
+    //    }
+    
 } // end class

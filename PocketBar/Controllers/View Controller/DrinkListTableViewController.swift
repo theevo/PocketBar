@@ -45,7 +45,7 @@ class DrinkListTableViewController: UITableViewController {
         let drink = drinks[indexPath.row]
         
         cell.drink = drink
-        cell.updateUI()
+//        cell.updateUI()
         
         return cell
     }
