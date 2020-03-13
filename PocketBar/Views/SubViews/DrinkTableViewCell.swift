@@ -19,15 +19,16 @@ class DrinkTableViewCell: UITableViewCell {
             instructionsLabel.text = drink.instructions
             
             DrinkController.fetchThumbnail(for: drink) { (result) in
-                DispatchQueue.main.async {
-                    switch result {
-                        
-                    case .success(let thumbnail):
+                switch result {
+                    
+                case .success(let thumbnail):
+                    DispatchQueue.main.async {
                         self.drinkThumbnail.image = thumbnail
-                    case .failure(let error):
-                        print(error, error.localizedDescription)
-                    }
-                } // end DispatchQueue
+                    } // end DispatchQueue
+                    
+                case .failure(let error):
+                    print(error, error.localizedDescription)
+                }
             } // end fetchThumbnail
         }
     }
