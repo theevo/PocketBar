@@ -45,28 +45,9 @@ class DrinkListTableViewController: UITableViewController {
         let drink = drinks[indexPath.row]
         
         cell.drink = drink
-//        cell.updateUI()
         
         return cell
     }
-    
-    
-    // MARK: - Helpers
-    
-    
-    
-    
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 } // end DrinkListTableViewController
 

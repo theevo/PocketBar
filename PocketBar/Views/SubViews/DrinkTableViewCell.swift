@@ -38,13 +38,4 @@ class DrinkTableViewCell: UITableViewCell {
     @IBOutlet weak var drinkNameLabel: UILabel!
     @IBOutlet weak var instructionsLabel: UILabel!
     
-    
-    
-    
-    //    func updateUI() {
-    //        guard let drink = drink else { return }
-    //        drinkNameLabel.text = drink.name
-    //        instructionsLabel.text = drink.instructions
-    //    }
-    
 } // end class

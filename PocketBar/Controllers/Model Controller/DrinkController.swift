@@ -13,7 +13,6 @@ class DrinkController {
     
     // MARK: - Private Properties
     
-    // https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
     static private let baseURL = URL(string: "https://www.thecocktaildb.com/api/json/v1/1/search.php")
     static private let searchQueryKey = "s"
     static private let apiEndpoint = "api/json"
