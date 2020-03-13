@@ -13,6 +13,8 @@
 		AC73A7F5241AFE8800CBFCDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC73A7F4241AFE8800CBFCDB /* Assets.xcassets */; };
 		AC73A7F8241AFE8800CBFCDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC73A7F6241AFE8800CBFCDB /* LaunchScreen.storyboard */; };
 		AC73A808241B024E00CBFCDB /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73A807241B024E00CBFCDB /* Drink.swift */; };
+		AC73A80A241B06A500CBFCDB /* DrinkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73A809241B06A500CBFCDB /* DrinkError.swift */; };
+		AC73A80C241B074600CBFCDB /* DrinkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC73A80B241B074600CBFCDB /* DrinkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		AC73A7F7241AFE8800CBFCDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC73A7F9241AFE8800CBFCDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC73A807241B024E00CBFCDB /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		AC73A809241B06A500CBFCDB /* DrinkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkError.swift; sourceTree = "<group>"; };
+		AC73A80B241B074600CBFCDB /* DrinkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 		AC73A800241AFEAB00CBFCDB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AC73A807241B024E00CBFCDB /* Drink.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,7 +109,7 @@
 		AC73A803241AFF2200CBFCDB /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AC73A807241B024E00CBFCDB /* Drink.swift */,
+				AC73A80B241B074600CBFCDB /* DrinkController.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 		AC73A805241AFF3400CBFCDB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				AC73A809241B06A500CBFCDB /* DrinkError.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -203,6 +209,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC73A7EC241AFE8600CBFCDB /* AppDelegate.swift in Sources */,
+				AC73A80C241B074600CBFCDB /* DrinkController.swift in Sources */,
+				AC73A80A241B06A500CBFCDB /* DrinkError.swift in Sources */,
 				AC73A808241B024E00CBFCDB /* Drink.swift in Sources */,
 				AC73A7EE241AFE8600CBFCDB /* SceneDelegate.swift in Sources */,
 			);
