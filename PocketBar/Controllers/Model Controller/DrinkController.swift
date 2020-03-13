@@ -6,7 +6,6 @@
 //  Copyright © 2020 theevo. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class DrinkController {
